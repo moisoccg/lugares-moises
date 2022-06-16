@@ -19,4 +19,6 @@
     <string name="msg_nombre">Nombre del lugar</string>
     <string name="msg_success">Se agregó exitosamente</string>
     <string name="msg_error">Hubo un error agregando lugar</string>
+    <string name="bt_update">Actualizar</string>
+    <string name="bt_add">Agregar</string>
 </resources>
