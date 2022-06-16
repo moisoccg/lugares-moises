@@ -2,9 +2,11 @@ package com.example.lugares.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lugares.databinding.LugarFilaBinding
 import com.example.lugares.model.Lugar
+import com.example.lugares.ui.lugar.LugarFragmentDirections
 
 class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>() {
 
@@ -15,6 +17,11 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>() {
             RecyclerView.ViewHolder(itemBinding.root){
                 fun bind(lugar: Lugar){
                     itemBinding.lugarName.text = lugar.nombre
+                    //Para navegar al update
+                    itemBinding.vistaFila.setOnClickListener{
+                        val action = LugarFragmentDirections.actionNavLugarToUpdateLugarFragment3(lugar)
+                        itemView.findNavController().navigate(action)
+                    }
                 }
             }
 
