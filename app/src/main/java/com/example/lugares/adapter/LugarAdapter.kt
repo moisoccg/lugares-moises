@@ -19,7 +19,7 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>() {
                     itemBinding.lugarName.text = lugar.nombre
                     //Para navegar al update
                     itemBinding.vistaFila.setOnClickListener{
-                        val action = LugarFragmentDirections.actionNavLugarToUpdateLugarFragment3(lugar)
+                        val action = LugarFragmentDirections.actionNavLugarToUpdateLugarFragment2(lugar)
                         itemView.findNavController().navigate(action)
                     }
                 }

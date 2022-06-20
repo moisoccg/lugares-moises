@@ -32,7 +32,7 @@ class LugarFragment : Fragment() {
         //binds to fragment_lugar.xml
 
         binding.btnAddLugar.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_lugar_to_addLugarFragment3) //take meto  fragment
+            findNavController().navigate(R.id.action_nav_lugar_to_addLugarFragment) //take meto  fragment
         }
 
         //Activar recycler view

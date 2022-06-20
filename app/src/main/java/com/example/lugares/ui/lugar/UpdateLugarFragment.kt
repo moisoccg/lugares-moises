@@ -61,7 +61,7 @@ class UpdateLugarFragment : Fragment() {
             lugarViewModel.updateLuggar(lugar) //enviando a la bd
             Toast.makeText(requireContext(), getString(R.string.msg_success), Toast.LENGTH_LONG).show()
 
-            findNavController().navigate(R.id.action_updateLugarFragment3_to_nav_lugar)
+            findNavController().navigate(R.id.action_updateLugarFragment2_to_nav_lugar)
         } else{
             Toast.makeText(requireContext(), getString(R.string.msg_error), Toast.LENGTH_LONG).show()
         }
@@ -76,7 +76,7 @@ class UpdateLugarFragment : Fragment() {
        builder.setPositiveButton(getString(R.string.yes)) {
            _,_ -> lugarViewModel.deleteLuggar(args.lugar)
            Toast.makeText(requireContext(), getString(R.string.delete_success) +"a ${args.lugar.nombre}!", Toast.LENGTH_LONG).show()
-           findNavController().navigate(R.id.action_updateLugarFragment3_to_nav_lugar)
+           findNavController().navigate(R.id.action_updateLugarFragment2_to_nav_lugar)
        }
         builder.setNegativeButton(getString(R.string.no)) { _,_ ->}
         builder.setTitle(R.string.delete_success)
