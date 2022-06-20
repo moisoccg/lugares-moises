@@ -18,5 +18,12 @@
 
     <string name="msg_nombre">Nombre del lugar</string>
     <string name="msg_success">Se agregó exitosamente</string>
+    <string name="delete_success">Se eliminó exitosamente</string>
+    <string name="safeToDelete">Seguro que quiere eliminar</string>
     <string name="msg_error">Hubo un error agregando lugar</string>
+    <string name="bt_update">Actualizar</string>
+    <string name="bt_add">Agregar</string>
+    <string name="menu_delete">Eliminar</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
 </resources>
